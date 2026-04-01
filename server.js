@@ -30,7 +30,7 @@ const customer = client.Customer({
 // CONFIG GEMINI
 // ==============================
 
-// Inicializamos el SDK con la variable de entorno que vas a cargar en Render
+// Inicializamos el SDK con la variable de entorno de Render
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // ==============================
