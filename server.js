@@ -1,9 +1,13 @@
 require('dotenv').config();
 
 const express = require('express');
+const cors = require('cors'); // <-- Importamos cors
 const { GoogleAdsApi } = require('google-ads-api');
 
 const app = express();
+
+// Habilitamos CORS para que tu web se pueda conectar
+app.use(cors());
 app.use(express.json());
 
 // ==============================
